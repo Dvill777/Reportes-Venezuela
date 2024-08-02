@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Container, Subtitle, Text, Title } from "./styles";
 import Nabvar from "../../components/Navbar/Nabvar";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
         </Text>
         <Button>Reportar una persona</Button>
       </Container>
+      <Footer />
     </>
   );
 };
