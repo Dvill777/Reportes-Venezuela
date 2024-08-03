@@ -19,7 +19,7 @@ const Nabvar = () => {
       <Nav $show={showMenu}>
         <NavItem to="/crear-publicacion">Reportar una persona</NavItem>
         <NavItem to="/publicaciones">Publicaciones</NavItem>
-        <NavItem to="/">Reportes verificados</NavItem>
+        <NavItem to="/reportes">Reportes verificados</NavItem>
       </Nav>
     </StyledNavbar>
   );

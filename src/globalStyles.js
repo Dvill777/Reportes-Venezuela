@@ -37,3 +37,30 @@ export const Button = styled.button`
         color: var(--accent-color);
     }
 `
+
+export const Input = styled.input`
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  &:focus-visible {
+    outline: none;
+  }
+`;
+
+export const Card = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #C2C2C2;
+    padding: 0.5rem;
+`
+
+export const CardImg = styled.img`
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+`

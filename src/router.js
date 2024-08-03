@@ -3,6 +3,7 @@ import Home from "./pages/Home/Home";
 import MainLayout from "./Layout/MainLayout";
 import CreatePost from "./pages/CreatePost/CreatePost";
 import Posts from "./pages/Posts/Posts";
+import Reports from "./pages/Reports/Reports";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
       {
         path: "/publicaciones",
         element: <Posts />,
+      },
+      {
+        path: "/reportes",
+        element: <Reports />,
       }
     ],
   },

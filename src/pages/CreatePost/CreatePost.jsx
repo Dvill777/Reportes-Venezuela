@@ -5,10 +5,9 @@ import {
   Select,
   Status,
   SubmitButton,
-  TextArea,
-  Input,
+  TextArea
 } from "./styles";
-import { Title } from "../../globalStyles";
+import { Title, Input } from "../../globalStyles";
 
 const CreatePost = () => {
   return (
