@@ -1,6 +1,6 @@
 import React from "react";
-import { Button, Subtitle, Text, Title } from "./styles";
-import { StyledLink } from "../../globalStyles";
+import { Subtitle, Text } from "./styles";
+import { StyledLink, Title, Button } from "../../globalStyles";
 
 const Home = () => {
   return (

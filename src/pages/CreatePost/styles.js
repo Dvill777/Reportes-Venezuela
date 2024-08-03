@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button } from "../Home/styles";
+import { Button } from "../../globalStyles";
 
 export const Container = styled.main`
   width: 100%;

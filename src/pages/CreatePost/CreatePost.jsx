@@ -1,10 +1,11 @@
 import React from "react";
 import { Form, Label, Select, Status, SubmitButton, TextArea, Input } from "./styles";
+import { Title } from "../../globalStyles";
 
 const CreatePost = () => {
   return (
     <>
-      <h1>Crear un Post</h1>
+      <Title>Crear un Post</Title>
       <Form>
         <Label $gridArea="ci">
           Cédula de identidad
