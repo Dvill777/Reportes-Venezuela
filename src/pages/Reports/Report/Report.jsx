@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card, CardImg } from '../../../globalStyles'
+import { Button, Card, CardImg, StyledLink } from '../../../globalStyles'
 import yendri from '../../../assets/images/veneco.jpg'
 
 const Report = () => {
@@ -9,7 +9,9 @@ const Report = () => {
       <h3>Yendri Rodriguez</h3>
       <p>Estado: Distrito Capital</p>
       <p>Status: Preso</p>
-      <Button>Ver más</Button>
+      <StyledLink to={"/reportes/1"}>
+        <Button>Ver más</Button>
+      </StyledLink>
     </Card>
   )
 }
