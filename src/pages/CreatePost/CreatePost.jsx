@@ -1,5 +1,13 @@
 import React from "react";
-import { Form, Label, Select, Status, SubmitButton, TextArea, Input } from "./styles";
+import {
+  Form,
+  Label,
+  Select,
+  Status,
+  SubmitButton,
+  TextArea,
+  Input,
+} from "./styles";
 import { Title } from "../../globalStyles";
 
 const CreatePost = () => {
@@ -9,15 +17,15 @@ const CreatePost = () => {
       <Form>
         <Label $gridArea="ci">
           Cédula de identidad
-          <Input type="number" name="ci" />
+          <Input type="number" name="ci" placeholder="Ej. 12345678" />
         </Label>
         <Label $gridArea="names">
           Nombres
-          <Input type="text" name="names" />
+          <Input type="text" name="names" placeholder="Ej. Juan" />
         </Label>
         <Label $gridArea="lastnames">
           Apellidos
-          <Input type="text" name="lastnames" />
+          <Input type="text" name="lastnames" placeholder="Ej. Perez" />
         </Label>
         <Label $gridArea="image">
           Foto de la persona
@@ -54,7 +62,7 @@ const CreatePost = () => {
         </Label>
         <Label $gridArea="age">
           Edad
-          <Input type="number" name="age" />
+          <Input type="number" name="age" placeholder="Ej. 25" />
         </Label>
         <Label $gridArea="last_sight_date">
           Fecha de último avistamiento
@@ -62,7 +70,11 @@ const CreatePost = () => {
         </Label>
         <Label $gridArea="last_sight_location">
           Ubicación de último avistamiento
-          <Input type="text" name="last_sight_location" />
+          <Input
+            type="text"
+            name="last_sight_location"
+            placeholder="Ej. Calle 123"
+          />
         </Label>
         <Status $gridArea="status">
           <h3>Status de la persona</h3>
@@ -91,9 +103,14 @@ const CreatePost = () => {
         </Status>
         <Label $gridArea="description">
           Descripción
-          <TextArea name="description" />
+          <TextArea
+            name="description"
+            placeholder="Ej. La ultima vez visto tenia una camisa azul, jeans..."
+          />
         </Label>
-        <SubmitButton type="submit" $gridArea="submit">Publicar</SubmitButton>
+        <SubmitButton type="submit" $gridArea="submit">
+          Publicar
+        </SubmitButton>
       </Form>
     </>
   );
