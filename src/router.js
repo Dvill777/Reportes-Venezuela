@@ -4,6 +4,7 @@ import MainLayout from "./Layout/MainLayout";
 import CreatePost from "./pages/CreatePost/CreatePost";
 import Posts from "./pages/Posts/Posts";
 import Reports from "./pages/Reports/Reports";
+import ReportDetail from "./pages/ReportDetail/ReportDetail";
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
       {
         path: "/reportes",
         element: <Reports />,
+      },
+      {
+        path: "/reportes/:id",
+        element: <ReportDetail />,
       }
     ],
   },
