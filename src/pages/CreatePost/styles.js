@@ -64,17 +64,6 @@ export const SubmitButton = styled(Button)`
   grid-area: ${({ $gridArea }) => $gridArea};
 `;
 
-export const Input = styled.input`
-  width: 100%;
-  height: 30px;
-  padding: 0 10px;
-  border: 2px solid var(--accent-color);
-  border-radius: 5px;
-  &:focus-visible {
-    outline: none;
-  }
-`;
-
 export const TextArea = styled.textarea`
   width: 100%;
   height: 100%;
