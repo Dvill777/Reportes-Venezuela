@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MenuIcon, Nav, NavItem, StyledNavbar } from "./styles";
 import navbarMenu from "../../assets/icons/bars.svg";
+import { StyledLink } from "../../globalStyles";
 
 const Nabvar = () => {
   const isDesktop = window.innerWidth >= 1024;
@@ -11,10 +12,12 @@ const Nabvar = () => {
 
   return (
     <StyledNavbar>
-      <h3>Reportes Venezuela</h3>
+      <StyledLink to="/">
+        <h3>Reportes Venezuela</h3>
+      </StyledLink>
       <MenuIcon src={navbarMenu} alt="Navbar Menu" onClick={toggleMenu} />
       <Nav $show={showMenu}>
-        <NavItem to="/">Reportar una persona</NavItem>
+        <NavItem to="/crear-publicacion">Reportar una persona</NavItem>
         <NavItem to="/">Publicaciones</NavItem>
         <NavItem to="/">Reportes verificados</NavItem>
       </Nav>

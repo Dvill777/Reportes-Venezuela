@@ -1,9 +1,10 @@
 import React from "react";
-import { Button, Container, Subtitle, Text, Title } from "./styles";
+import { Subtitle, Text } from "./styles";
+import { StyledLink, Title, Button } from "../../globalStyles";
 
 const Home = () => {
   return (
-    <Container>
+    <>
       <Title>Reportes Venezuela</Title>
       <Text>
         Bienvenido a Reportes Venezuela. En Reportes Venezuela, nos dedicamos a
@@ -23,8 +24,10 @@ const Home = () => {
         el cual después se somete a revision y publicación en la sección de
         desapariciones o secuestros verificados.
       </Text>
-      <Button>Reportar una persona</Button>
-    </Container>
+      <StyledLink to="/crear-publicacion">
+        <Button>Reportar una persona</Button>
+      </StyledLink>
+    </>
   );
 };
 
