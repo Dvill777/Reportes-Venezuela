@@ -14,7 +14,7 @@ const Nabvar = () => {
       <h3>Reportes Venezuela</h3>
       <MenuIcon src={navbarMenu} alt="Navbar Menu" onClick={toggleMenu} />
       <Nav $show={showMenu}>
-        <NavItem to="/">Reportar una persona</NavItem>
+        <NavItem to="/crear-publicacion">Reportar una persona</NavItem>
         <NavItem to="/">Publicaciones</NavItem>
         <NavItem to="/">Reportes verificados</NavItem>
       </Nav>
