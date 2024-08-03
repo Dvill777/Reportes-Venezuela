@@ -1,9 +1,9 @@
 import React from "react";
-import { Button, Container, Subtitle, Text, Title } from "./styles";
+import { Button, Subtitle, Text, Title } from "./styles";
 
 const Home = () => {
   return (
-    <Container>
+    <>
       <Title>Reportes Venezuela</Title>
       <Text>
         Bienvenido a Reportes Venezuela. En Reportes Venezuela, nos dedicamos a
@@ -24,7 +24,7 @@ const Home = () => {
         desapariciones o secuestros verificados.
       </Text>
       <Button>Reportar una persona</Button>
-    </Container>
+    </>
   );
 };
 

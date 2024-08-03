@@ -1,14 +1,5 @@
 import styled from "styled-components";
 
-export const Container = styled.main`
-    margin-top: 60px;
-    width: 100%;
-    padding: 2rem;
-    @media (min-width: 1024px){
-        padding: 4rem;
-    }
-`
-
 export const Title = styled.h1`
     font-size: 3rem;
     font-weight: 700;
