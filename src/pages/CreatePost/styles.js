@@ -8,17 +8,34 @@ export const Container = styled.main`
 `;
 
 export const Form = styled.form`
+  width: 100%;
   margin-top: 1rem;
   display: grid;
   grid-template:
-    "ci names lastnames image" 1fr
-    "state age last_sight_date last_sight_location" 1fr
-    "status status status status" 1fr
-    "description description . ." 10rem
-    "submit . . ." 1fr
-    / 1fr 1fr 1fr 1fr;
+    "ci" 1fr
+    "names " 1fr
+    "lastnames" 1fr
+    "image" 1fr
+    "state" 1fr
+    "age " 1fr
+    "last_sight_date" 1fr
+    "last_sight_location" 1fr
+    "status" auto
+    "description" 200px
+    "submit" 1fr
+    / 100%;
   grid-column-gap: 10px;
   grid-row-gap: 20px;
+
+  @media (min-width: 1024px) {
+    grid-template:
+      "ci names lastnames image" 1fr
+      "state age last_sight_date last_sight_location" 1fr
+      "status status status status" 1fr
+      "description description . ." 10rem
+      "submit . . ." 1fr
+      / 1fr 1fr 1fr 1fr;
+  }
 `;
 
 export const Label = styled.label`
@@ -28,7 +45,6 @@ export const Label = styled.label`
   align-items: ${({ $direction }) =>
     $direction === "row" ? "center" : "flex-start"};
   gap: 10px;
-  margin-bottom: 10px;
   grid-area: ${({ $gridArea }) => $gridArea};
 `;
 
@@ -39,7 +55,8 @@ export const Status = styled.div`
   div {
     margin-top: 10px;
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 `;
 
@@ -56,7 +73,7 @@ export const Input = styled.input`
   &:focus-visible {
     outline: none;
   }
-`
+`;
 
 export const TextArea = styled.textarea`
   width: 100%;
@@ -67,7 +84,7 @@ export const TextArea = styled.textarea`
   &:focus-visible {
     outline: none;
   }
-`
+`;
 
 export const Select = styled.select`
   width: 100%;
@@ -78,4 +95,4 @@ export const Select = styled.select`
   &:focus-visible {
     outline: none;
   }
-`
+`;

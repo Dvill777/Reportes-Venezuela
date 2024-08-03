@@ -6,5 +6,9 @@ export const Container = styled.footer`
     padding: 1rem;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    @media (min-width: 1024px){
+        flex-direction: row;
+    }
 `
