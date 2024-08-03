@@ -18,7 +18,7 @@ const Nabvar = () => {
       <MenuIcon src={navbarMenu} alt="Navbar Menu" onClick={toggleMenu} />
       <Nav $show={showMenu}>
         <NavItem to="/crear-publicacion">Reportar una persona</NavItem>
-        <NavItem to="/">Publicaciones</NavItem>
+        <NavItem to="/publicaciones">Publicaciones</NavItem>
         <NavItem to="/">Reportes verificados</NavItem>
       </Nav>
     </StyledNavbar>
