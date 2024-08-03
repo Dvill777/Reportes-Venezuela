@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Main = styled.main`
@@ -8,4 +9,9 @@ export const Main = styled.main`
     @media (min-width: 1024px){
         padding: 4rem;
     }
+`
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: inherit;
 `

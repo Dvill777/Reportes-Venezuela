@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Subtitle, Text, Title } from "./styles";
+import { StyledLink } from "../../globalStyles";
 
 const Home = () => {
   return (
@@ -23,7 +24,9 @@ const Home = () => {
         el cual después se somete a revision y publicación en la sección de
         desapariciones o secuestros verificados.
       </Text>
-      <Button>Reportar una persona</Button>
+      <StyledLink to="/crear-publicacion">
+        <Button>Reportar una persona</Button>
+      </StyledLink>
     </>
   );
 };
