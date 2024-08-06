@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
   margin: 0;
   padding: 0;
@@ -5,7 +9,7 @@
   font-family: Arial, sans-serif;
 }
 
-:root{
+/* :root{
   --primary-bg-color: #222831;
   --secondary-bg-color: #31363F;
   --accent-color: #76ABAE;
@@ -15,4 +19,4 @@ body{
   background-color: var(--primary-bg-color);
   font-size: 18px;
   color: #fff ;
-}
+} */
