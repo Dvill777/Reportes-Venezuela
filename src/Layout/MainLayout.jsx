@@ -2,15 +2,14 @@ import React from 'react'
 import Nabvar from '../components/Navbar/Nabvar'
 import { Outlet } from 'react-router-dom'
 import Footer from '../components/Footer/Footer'
-import { Main } from '../globalStyles'
 
 const MainLayout = () => {
   return (
     <>
         <Nabvar />
-        <Main>
+        <main className='w-full mt-16 p-8 min-h-screen lg:p-4 bg-sky-950 text-white'>
             <Outlet />
-        </Main>
+        </main>
         <Footer />
     </>
     

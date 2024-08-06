@@ -1,11 +1,12 @@
 import React from 'react'
 import yendri from '../../../assets/images/veneco.jpg'
-import { Card, CardImg } from '../../../globalStyles'
+import Card from '../../../components/Card/Card'
+import CardImage from '../../../components/Card/CardImage'
 
 const Post = () => {
   return (
     <Card>
-        <CardImg src={yendri} alt="Persona del post" />
+        <CardImage src={yendri} alt="Persona del post" />
         <h3>Yendri Rodriguez</h3>
         <p>C.I. 12345678</p>
         <p>Estado: Districo Capital</p>

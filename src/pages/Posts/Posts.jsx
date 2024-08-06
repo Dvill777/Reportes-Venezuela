@@ -1,20 +1,19 @@
 import React from 'react'
-import { Title } from '../../globalStyles'
-import { PostsContainer } from './styles'
 import Post from './Post/Post'
+import Title from '../../components/ui/Title'
 
 const Posts = () => {
   return (
     <>
       <Title>Publicaciones</Title>
-      <PostsContainer>
+      <section className='w-full grid grid-cols-1 auto-rows-auto lg:grid-cols-4 gap-5'>
         <Post/>
         <Post/>
         <Post/>
         <Post/>
         <Post/>
         <Post/>
-      </PostsContainer>
+      </section>
     </>
   )
 }

@@ -1,12 +1,10 @@
 import React from 'react'
-import { Container } from './styles'
-
 const Footer = () => {
   return (
-    <Container>
+    <footer className='w-full bg-sky-900 p-4 text-center flex flex-col text-white'>
       <p> 2024 Reportes Venezuela</p>
       <p> Por una 🇻🇪 libre</p>
-    </Container>
+    </footer>
   )
 }
 
